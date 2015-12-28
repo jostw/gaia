@@ -108,7 +108,7 @@ var AppInstallManager = {
   },
 
   isMarketplaceAppActive: function ai_isMarketplaceAppActive() {
-    const MARKETPLACE_DOMAIN = 'https://marketplace.firefox.com/';
+    const MARKETPLACE_DOMAIN = 'app://marketplace.firefox.com/';
 
     var activeApp = AppWindowManager.getActiveApp();
     return activeApp && activeApp.manifestURL.startsWith(MARKETPLACE_DOMAIN);
